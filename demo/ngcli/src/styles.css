@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+.loader {
+  border: 5px solid #ccc;
+  border-top: 5px solid #2f96b4;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  animation: spin-loader 2s linear infinite;
+  animation-delay: .2s;
+  margin: auto;
+}
+
+@keyframes spin-loader {
+  from {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
